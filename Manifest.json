@@ -8,5 +8,9 @@
   "name": "Master F",
   "version": "Seaglide",
   "description": "A browser application that finds searched words, the phrases they are contained in, included synonyms, and antonyms.",
-  "icons": {...},
+  "icons": {"stock_icon"},
+  "browser_action": {
+    "stock_icon": "http://reelbigmedia.com/wp-content/uploads/photomoney.jpg",
+    "popup": "popup.html"
+  }
 }
