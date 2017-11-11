@@ -1,0 +1,12 @@
+{
+  "app": {
+    "background": {
+      "scripts": ["config.js"]
+    }
+  },
+  "manifest_version": 1,
+  "name": "Master F",
+  "version": "Seaglide",
+  "description": "A browser application that finds searched words, the phrases they are contained in, included synonyms, and antonyms.",
+  "icons": {...},
+}
