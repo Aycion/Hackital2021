@@ -1,4 +1,5 @@
-function openTab(evt, tabName) {
+
+$("#elementId").click(function openTab(evt, tabName) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
@@ -18,3 +19,8 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('button').addEventListener('click', openTab(''));
+  main();
+}));

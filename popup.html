@@ -4,37 +4,39 @@
 <style>
 body {
   font-family: Arial;
-  min-width: 430px;
+  min-width: 250px;
 }
-
 /* Style the tab */
 div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
-
 /* Style the buttons inside the tab */
 div.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
 
+    background-color: inherit;
+    border: 1px;
+    outline: 1px;
+    cursor: pointer;
+    padding: 4px 4px;
+    transition: 0.3s;
+    font-size: 12px;
+}
 /* Change background color of buttons on hover */
 div.tab button:hover {
     background-color: #ddd;
 }
-
 /* Create an active/current tablink class */
 div.tab button.active {
     background-color: #ccc;
 }
+
+h3, p, input {
+    margin-left: 5px;
+}
+
+
 
 /* Style the tab content */
 .tabcontent {
@@ -45,34 +47,51 @@ div.tab button.active {
 }
 </style>
 
-
+<link rel="manifest" href="/manifest.json">
 <title>Master F</title>
 </head>
+<script src= "popup.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <body>
   <div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'words')">Change Words</button>
-  <button class="tablinks" onclick="openTab(event, 'matches')">Matches</button>
-  <button class="tablinks" onclick="openTab(event, 'synonyms')">Synonym Matches</button>
-</div>
 
-
-<div id="words" class="tabcontent">
   <h3>Change Words</h3>
   <p>Word input will go here.</p>
-</div>
-
-<div id="matches" class="tabcontent">
+  <input> <button>Add Term</button>
+  <br />
+  <hr />
   <h3>Matches</h3>
   <p>Single matches will go here.</p>
-</div>
 
-<div id="synonyms" class="tabcontent">
+  <hr />
+
   <h3>Synonym Matches</h3>
   <p>Matches for synonyms will go here.</p>
-</div>
 
-<h1>Found Words</h1>
-<p></p>
+
+    <!-- <button id="words" class="tablinks" onclick="openTab(event, 'words')">Change Words</button>
+    <button id="matches" class="tablinks" onclick="openTab(event, 'matches')">Matches</button>
+    <button id="synonyms" class="tablinks" onclick="openTab(event, 'synonyms')">Synonym Matches</button>
+  </div>
+
+
+  <div class="tabcontent">
+    <h3>Change Words</h3>
+    <p>Word input will go here.</p>
+  </div>
+
+  <div class="tabcontent">
+    <h3>Matches</h3>
+    <p>Single matches will go here.</p>
+  </div>
+
+  <div class="tabcontent">
+    <h3>Synonym Matches</h3>
+    <p>Matches for synonyms will go here.</p>
+  </div> -->
+
+
+
 
 </body>
 </html>
