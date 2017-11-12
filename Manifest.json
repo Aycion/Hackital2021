@@ -1,6 +1,8 @@
 {
   "manifest_version": 2,
-
+  "background": {
+      "scripts": ["background.js"]
+    },
   "name": "Master F",
   "version": "1.0",
   "description": "A browser application that finds searched words, the phrases they are contained in, included synonyms, and antonyms.",
@@ -11,6 +13,5 @@
   "permissions": [
   "activeTab",
   "storage"
-],
-"content_security_policy": "script-src 'self' https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js; object-src 'self'"
+]
 }
