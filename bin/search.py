@@ -9,9 +9,9 @@ class Searcher:
         self.searchTerm = searchTerm
         self.synTerms = synTerms
         self.termMatches = []
-        self.synMatches = []
+        self.synMatches = {}
         self.match_term()
-        if synTerms: match_synonyms()
+        if synTerms: self.match_synonyms()
 
     def match_term(self):
         found = self.toSearch.find(self.searchTerm)
@@ -19,6 +19,10 @@ class Searcher:
             self.termMatches.append(found)
             found = self.toSearch.find(self.searchTerm, found+1)
 
-    #def match_synonyms(self):
+    def match_synonyms(self):
 
-        #for syn in synTerms:
+        for syn in self.synTerms:
+            found = self.toSearch.find(syn)
+            while found != -1:
+                self.synMatches[found] = [syn, len(syn)]
+                found = self.toSearch.find(syn, found+1)
