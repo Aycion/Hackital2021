@@ -1,3 +1,6 @@
 [submodule "thesaurus-api"]
 	path = ThesaurusAPI
 	url = https://github.com/Aycion/thesaurus-api.git
+[submodule "ThesaurusAPI"]
+	path = ThesaurusAPI
+	url = https://github.com/Aycion/thesaurus-api.git
